@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttons">
+      <button
+        id="success"
+        onclick="showToast('İşlem başarılı!', 5000, 'success')"
+      >
+        Başarılı
+      </button>
+      <button id="error" onclick="showToast('Hatalı işlem!', 5000, 'error')">
+        Hatalı
+      </button>
+      <button
+        id="warning"
+        onclick="showToast('Dikkat lutfen!', 5000, 'warning')"
+      >
+        Dikkat
+      </button>
+      <button id="info" onclick="showToast('Bilgi veriyorum!', 5000, 'info')">
+        Dikkat
+      </button>
+    </div>
+    <div id="toast-container"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

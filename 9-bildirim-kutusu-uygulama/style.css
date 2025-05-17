@@ -1,0 +1,84 @@
+.buttons {
+  margin: 20px;
+}
+
+.buttons button {
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+#toast-container {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+.toast {
+  position: relative;
+  min-width: 250px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  background-color: #e3e3e3;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: fade-in 0.3s forwards;
+  border-left: 5px solid transparent;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  animation: progress-bar linear forwards;
+}
+
+#success,
+.toast.success .progress {
+  background-color: #2ecc71;
+}
+
+#error,
+.toast.error .progress {
+  background-color: #e74c3c;
+}
+
+#warning,
+.toast.warning .progress {
+  background-color: #f1c40f;
+}
+
+#info,
+.toast.info .progress {
+  background-color: #3498db;
+}
+
+@keyframes progress-bar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

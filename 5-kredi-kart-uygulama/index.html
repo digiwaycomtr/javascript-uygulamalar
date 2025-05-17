@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kredi Kartı Ödeme Formu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="card-face card-front">
+        <div class="chip"></div>
+        <div class="card-number" id="card-number">#### #### #### ####</div>
+        <div class="card-holder" id="card-holder">İsim Soyisim</div>
+        <div class="card-expriy" id="card-expriy">MM/YY</div>
+      </div>
+      <div class="card-face card-back ">
+        <div class="black-bar"></div>
+        <div class="cvv-label">CVV</div>
+        <div class="card-cvv" id="card-cvv">***</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-container">
+    <input type="text" id="input-number" placeholder="Kart Numarası (16 haneli)" maxlength="16">
+    <input type="text" id="input-name" placeholder="İsim Soyisim" maxlength="30">
+
+    <div class="expriy-selectors">
+      <select id="expriy-month">
+        <option value="">Ay</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <select id="expriy-year">
+        <option value="">Yıl</option>
+      </select>
+    </div>
+
+    <input type="text" id="input-cvv" placeholder="CVV (3 haneli)" maxlength="3">
+    <button id="pay-button">Ödeme Sayfasına Geç</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

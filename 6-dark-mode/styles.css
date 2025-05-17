@@ -1,0 +1,41 @@
+:root {
+    --clr-bcg: #f8f9fa;
+}
+
+.dark-theme {
+    --clr-bcg: #282c35;
+}
+
+.fa-sun {
+    color: #FF6F50;
+}
+
+body {
+    background: var(--clr-bcg);
+    transition: all 0.4s ease;
+    padding: 1.3rem;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.1rem;
+    transition: color 0.4s ease;
+}
+
+.btn:hover{
+    font-size: 2.2rem;
+}
+
+.img {
+    width: 55px;
+    height: 55px;
+}

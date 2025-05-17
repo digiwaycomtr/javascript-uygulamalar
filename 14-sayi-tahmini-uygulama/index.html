@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sayı Tahmin Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Sayı Tahmin Oyunu</h1>
+
+      <div id="setup-section">
+        <p>Maksimum kaç tahmin hakkı istiyorsun?</p>
+        <input type="number" id="max-attempts-input" placeholder="Örn: 10" />
+        <button id="start-btn">Oyuna Başla</button>
+      </div>
+
+      <div id="game-section" style="display: none">
+        <div id="result-panel">
+          <p>1 ile 100 arasında bir sayı tuttum. Tahmin et bakalım!</p>
+          <input type="number" id="guess-input" placeholder="Tahminini gir" />
+          <button id="submit-btn">Tahmin Et</button>
+        </div>
+
+        <p id="feedback"></p>
+        <p id="attempts">Deneme: 0</p>
+        <p id="remaining">Kalan hak: -</p>
+        <button id="restart-btn" style="display: none">Yeniden Başlat</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
